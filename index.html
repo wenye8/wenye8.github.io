@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> vue.js </title>
+	<link rel="stylesheet"  href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<button id="btn" v-on:click="add">增一岁</button>
+		<button id="btn1" v-on:click="substract">减一岁</button>
+		<button id="btn" v-on:dblclick="add">增一岁</button>
+		<button id="btn1" v-on:dblclick="substract">减一岁</button>
+		<h1>Age:{{age}}</h1>
+
+		<div id="canvas" v-on:mousemove="upateXY">
+			{{X}},{{Y}} -<span v-on:mousemove.stop="StopMove">Stop Moveing</span>
+		</div>
+	</div>
+	
+
+	<script src="app.js"></script>
+
+</body>
+</html>
